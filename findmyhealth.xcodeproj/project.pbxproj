@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */; };
-		CFE648201B9AC75200C6BC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481F1B9AC75200C6BC14 /* ViewController.swift */; };
+		CFE648201B9AC75200C6BC14 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481F1B9AC75200C6BC14 /* DashboardViewController.swift */; };
 		CFE648231B9AC75200C6BC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE648211B9AC75200C6BC14 /* Main.storyboard */; };
 		CFE648251B9AC75200C6BC14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE648241B9AC75200C6BC14 /* Images.xcassets */; };
 		CFE648281B9AC75200C6BC14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */; };
 		CFE648341B9AC75300C6BC14 /* findmyhealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */; };
+		CFFF0BD81B9AD64B00AC8129 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */; };
+		CFFF0BDA1B9AD66000AC8129 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */; };
+		CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */; };
+		CFFF0BDE1B9AD68300AC8129 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BDD1B9AD68300AC8129 /* EmergencyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		CFE648181B9AC75200C6BC14 /* findmyhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findmyhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE6481C1B9AC75200C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFE6481F1B9AC75200C6BC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFE6481F1B9AC75200C6BC14 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		CFE648221B9AC75200C6BC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE648241B9AC75200C6BC14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFE648271B9AC75200C6BC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFE6482D1B9AC75300C6BC14 /* findmyhealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findmyhealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE648321B9AC75300C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findmyhealthTests.swift; sourceTree = "<group>"; };
+		CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
+		CFFF0BDD1B9AD68300AC8129 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,8 @@
 		CFE6481A1B9AC75200C6BC14 /* findmyhealth */ = {
 			isa = PBXGroup;
 			children = (
+				CFFF0BD61B9AC88200AC8129 /* ViewControllers */,
 				CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */,
-				CFE6481F1B9AC75200C6BC14 /* ViewController.swift */,
 				CFE648211B9AC75200C6BC14 /* Main.storyboard */,
 				CFE648241B9AC75200C6BC14 /* Images.xcassets */,
 				CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */,
@@ -110,6 +118,18 @@
 				CFE648321B9AC75300C6BC14 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFFF0BD61B9AC88200AC8129 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6481F1B9AC75200C6BC14 /* DashboardViewController.swift */,
+				CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */,
+				CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */,
+				CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */,
+				CFFF0BDD1B9AD68300AC8129 /* EmergencyViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE648201B9AC75200C6BC14 /* ViewController.swift in Sources */,
+				CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */,
+				CFE648201B9AC75200C6BC14 /* DashboardViewController.swift in Sources */,
+				CFFF0BDE1B9AD68300AC8129 /* EmergencyViewController.swift in Sources */,
+				CFFF0BDA1B9AD66000AC8129 /* ContactsViewController.swift in Sources */,
 				CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */,
+				CFFF0BD81B9AD64B00AC8129 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +435,7 @@
 				CFE648391B9AC75300C6BC14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFE6483A1B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealthTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				CFE6483C1B9AC75300C6BC14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

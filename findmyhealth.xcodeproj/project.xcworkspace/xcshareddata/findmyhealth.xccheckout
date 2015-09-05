@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B7743797-31F7-4633-887A-C6F71417E635</string>
+	<key>IDESourceControlProjectName</key>
+	<string>findmyhealth</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>809464B4C08906E64C454025C2114E44FAE27C55</key>
+		<string>https://github.com/FindMyHealth/FindMyHealth-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>findmyhealth.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>809464B4C08906E64C454025C2114E44FAE27C55</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FindMyHealth/FindMyHealth-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>809464B4C08906E64C454025C2114E44FAE27C55</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>809464B4C08906E64C454025C2114E44FAE27C55</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FindMyHealth-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
