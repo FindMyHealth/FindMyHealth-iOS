@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */; };
+		CFE648201B9AC75200C6BC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481F1B9AC75200C6BC14 /* ViewController.swift */; };
+		CFE648231B9AC75200C6BC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE648211B9AC75200C6BC14 /* Main.storyboard */; };
+		CFE648251B9AC75200C6BC14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE648241B9AC75200C6BC14 /* Images.xcassets */; };
+		CFE648281B9AC75200C6BC14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */; };
+		CFE648341B9AC75300C6BC14 /* findmyhealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFE6482E1B9AC75300C6BC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFE648101B9AC75200C6BC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE648171B9AC75200C6BC14;
+			remoteInfo = findmyhealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFE648181B9AC75200C6BC14 /* findmyhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findmyhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE6481C1B9AC75200C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFE6481F1B9AC75200C6BC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFE648221B9AC75200C6BC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFE648241B9AC75200C6BC14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFE648271B9AC75200C6BC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CFE6482D1B9AC75300C6BC14 /* findmyhealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findmyhealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE648321B9AC75300C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findmyhealthTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFE648151B9AC75200C6BC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE6482A1B9AC75300C6BC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFE6480F1B9AC75200C6BC14 = {
+			isa = PBXGroup;
+			children = (
+				CFE6481A1B9AC75200C6BC14 /* findmyhealth */,
+				CFE648301B9AC75300C6BC14 /* findmyhealthTests */,
+				CFE648191B9AC75200C6BC14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE648191B9AC75200C6BC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFE648181B9AC75200C6BC14 /* findmyhealth.app */,
+				CFE6482D1B9AC75300C6BC14 /* findmyhealthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFE6481A1B9AC75200C6BC14 /* findmyhealth */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */,
+				CFE6481F1B9AC75200C6BC14 /* ViewController.swift */,
+				CFE648211B9AC75200C6BC14 /* Main.storyboard */,
+				CFE648241B9AC75200C6BC14 /* Images.xcassets */,
+				CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */,
+				CFE6481B1B9AC75200C6BC14 /* Supporting Files */,
+			);
+			path = findmyhealth;
+			sourceTree = "<group>";
+		};
+		CFE6481B1B9AC75200C6BC14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6481C1B9AC75200C6BC14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFE648301B9AC75300C6BC14 /* findmyhealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */,
+				CFE648311B9AC75300C6BC14 /* Supporting Files */,
+			);
+			path = findmyhealthTests;
+			sourceTree = "<group>";
+		};
+		CFE648311B9AC75300C6BC14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFE648321B9AC75300C6BC14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFE648171B9AC75200C6BC14 /* findmyhealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE648371B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealth" */;
+			buildPhases = (
+				CFE648141B9AC75200C6BC14 /* Sources */,
+				CFE648151B9AC75200C6BC14 /* Frameworks */,
+				CFE648161B9AC75200C6BC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = findmyhealth;
+			productName = findmyhealth;
+			productReference = CFE648181B9AC75200C6BC14 /* findmyhealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFE6482C1B9AC75300C6BC14 /* findmyhealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE6483A1B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealthTests" */;
+			buildPhases = (
+				CFE648291B9AC75300C6BC14 /* Sources */,
+				CFE6482A1B9AC75300C6BC14 /* Frameworks */,
+				CFE6482B1B9AC75300C6BC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE6482F1B9AC75300C6BC14 /* PBXTargetDependency */,
+			);
+			name = findmyhealthTests;
+			productName = findmyhealthTests;
+			productReference = CFE6482D1B9AC75300C6BC14 /* findmyhealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFE648101B9AC75200C6BC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = haithammaaieh;
+				TargetAttributes = {
+					CFE648171B9AC75200C6BC14 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CFE6482C1B9AC75300C6BC14 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CFE648171B9AC75200C6BC14;
+					};
+				};
+			};
+			buildConfigurationList = CFE648131B9AC75200C6BC14 /* Build configuration list for PBXProject "findmyhealth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFE6480F1B9AC75200C6BC14;
+			productRefGroup = CFE648191B9AC75200C6BC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFE648171B9AC75200C6BC14 /* findmyhealth */,
+				CFE6482C1B9AC75300C6BC14 /* findmyhealthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFE648161B9AC75200C6BC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE648231B9AC75200C6BC14 /* Main.storyboard in Resources */,
+				CFE648281B9AC75200C6BC14 /* LaunchScreen.xib in Resources */,
+				CFE648251B9AC75200C6BC14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE6482B1B9AC75300C6BC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFE648141B9AC75200C6BC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE648201B9AC75200C6BC14 /* ViewController.swift in Sources */,
+				CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE648291B9AC75300C6BC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE648341B9AC75300C6BC14 /* findmyhealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFE6482F1B9AC75300C6BC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFE648171B9AC75200C6BC14 /* findmyhealth */;
+			targetProxy = CFE6482E1B9AC75300C6BC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFE648211B9AC75200C6BC14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFE648221B9AC75200C6BC14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFE648271B9AC75200C6BC14 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFE648351B9AC75300C6BC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFE648361B9AC75300C6BC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFE648381B9AC75300C6BC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = findmyhealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFE648391B9AC75300C6BC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = findmyhealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFE6483B1B9AC75300C6BC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = findmyhealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findmyhealth.app/findmyhealth";
+			};
+			name = Debug;
+		};
+		CFE6483C1B9AC75300C6BC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = findmyhealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findmyhealth.app/findmyhealth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFE648131B9AC75200C6BC14 /* Build configuration list for PBXProject "findmyhealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE648351B9AC75300C6BC14 /* Debug */,
+				CFE648361B9AC75300C6BC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE648371B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE648381B9AC75300C6BC14 /* Debug */,
+				CFE648391B9AC75300C6BC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFE6483A1B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE6483B1B9AC75300C6BC14 /* Debug */,
+				CFE6483C1B9AC75300C6BC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFE648101B9AC75200C6BC14 /* Project object */;
+}
