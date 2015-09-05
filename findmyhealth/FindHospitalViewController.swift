@@ -22,6 +22,26 @@ class FindHospitalViewController: UIViewController {
     }
     
     func setUpInterface() {
+        let topView = UIView()
+        topView.frame.size = CGSize(width: view.bounds.width, height: view.bounds.height * 0.15)
+        topView.frame.origin = CGPointZero
+        topView.backgroundColor = UIColor(hex: 0x008500, alpha: 1)
+        view.addSubview(topView)
+        
+        let mainTitle = UILabel()
+        mainTitle.textAlignment = .Center
+        mainTitle.textColor = UIColor.whiteColor()
+        mainTitle.font = UIFont(name: "HelveticaNeue", size: 30)
+        mainTitle.text = "Choose Your Condition"
+        mainTitle.sizeToFit()
+        mainTitle.frame.size.width = view.bounds.width
+        mainTitle.center = CGPoint(x: topView.bounds.midX, y: topView.bounds.midY)
+        topView.addSubview(mainTitle)
+        
+        let titles:[String] = ["","","",""]
+        let description:[String] = ["","","",""]
+        let images:[UIImage] = []
+        
         let backButton = UIButton()
         backButton.setTitle("Back", forState: UIControlState.Normal)
         backButton.sizeToFit()
