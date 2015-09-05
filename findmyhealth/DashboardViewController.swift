@@ -39,6 +39,7 @@ class DashboardViewController: UIViewController {
         find.removeFromSuperview()
         emergency.removeFromSuperview()
         let images:[UIImage] = [UIImage(named: "settings")!, UIImage(named: "contacts")!, UIImage(named: "hospital")!, UIImage(named: "ambulance")!]
+        let subtitles:[String] = ["Based on your condition, find the best hospital to go to.","Dial 911 and notify your primary contacts of your location.","Set up your primary contacts to notify in the case of an emergency.","Edit your profile information and app settings."]
         
         formatControl(settings)
         formatControl(contacts)
@@ -50,12 +51,12 @@ class DashboardViewController: UIViewController {
         bottomView.frame.size = CGSize(width: screenSize.width, height: bottomBorder)
         bottomView.frame.origin = CGPoint(x: 0, y: screenSize.height - bottomBorder)
         bottomView.backgroundColor = UIColor.blackColor()
-        var imageCount = 0
+        var count = 0
         for image in images {
             let imageView = UIImageView()
             imageView.image = image
             imageView.frame.size = CGSize(width: settings.frame.size.width * 0.4, height: image.size.height / image.size.width * settings.frame.size.width * 0.4)
-            switch imageCount {
+            switch count {
             case 0:
                 imageView.tintColor = UIColor(hex: 0x006064, alpha: 1)
                 settings.addSubview(imageView)
@@ -74,8 +75,9 @@ class DashboardViewController: UIViewController {
                 break
             }
             imageView.center = CGPoint(x: settings.bounds.width/2, y: settings.bounds.height*0.1 + imageView.bounds.height/2)
-            imageCount++
+            count++
         }
+        count = 0
         
 //        settings.layer.borderColor = UIColor(hex: 0xFF0000, alpha: 1).CGColor
 //        contacts.layer.borderColor = UIColor(hex: 0xFF7400, alpha: 1).CGColor
@@ -134,6 +136,36 @@ class DashboardViewController: UIViewController {
         applyLabelFormat(findLabel)
         applyLabelFormat(emergencyLabel)
         
+        for text in subtitles {
+            let label = UILabel()
+            label.text = text
+            label.numberOfLines = 0
+            label.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            label.font = UIFont(name: "HelveticaNeue", size: 12)
+            label.textAlignment = .Center
+            label.textColor = UIColor.grayColor()
+            label.frame.size.width = settings.frame.size.width - 10
+            label.sizeToFit()
+            switch count {
+            case 0:
+                label.center = CGPoint(x: find.bounds.width/2, y: find.bounds.height*0.65)
+                find.addSubview(label)
+            case 1:
+                label.center = CGPoint(x: emergency.bounds.width/2, y: emergency.bounds.height*0.65)
+                emergency.addSubview(label)
+            case 2:
+                label.center = CGPoint(x: contacts.bounds.width/2, y: contacts.bounds.height*0.65)
+                contacts.addSubview(label)
+            case 3:
+                label.center = CGPoint(x: settings.bounds.width/2, y: settings.bounds.height*0.65)
+                settings.addSubview(label)
+            default:
+                break
+            }
+            count++
+        }
+        
+        
         settings.addTarget(self, action: "navigateToPage:", forControlEvents: UIControlEvents.TouchUpInside)
         contacts.addTarget(self, action: "navigateToPage:", forControlEvents: UIControlEvents.TouchUpInside)
         find.addTarget(self, action: "navigateToPage:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -171,12 +203,16 @@ class DashboardViewController: UIViewController {
         switch sender {
         case settings:
             println("Settings")
+            self.performSegueWithIdentifier("goToSettings", sender: self)
         case contacts:
             println("Contacts")
+            self.performSegueWithIdentifier("goToContacts", sender: self)
         case find:
             println("Find Hospital")
+            self.performSegueWithIdentifier("goToHospital", sender: self)
         case emergency:
             println("Emergency")
+            self.performSegueWithIdentifier("goToEmergency", sender: self)
         default:
             break
         }
@@ -187,7 +223,16 @@ class DashboardViewController: UIViewController {
     func controlNormal(sender: UIControl) {
         sender.alpha = 1
     }
-
+    func findLastY(view: UIView) -> CGFloat {
+        var lastY:CGFloat = 0
+        for views in view.subviews {
+            let yEdge = (views.center.y + views.bounds.height/2)
+            if(yEdge > lastY) {
+                lastY = yEdge
+            }
+        }
+        return lastY
+    }
 
 }
 

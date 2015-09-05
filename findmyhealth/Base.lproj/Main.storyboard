@@ -34,10 +34,88 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="STo-GV-2Qo"/>
+                    <connections>
+                        <segue destination="iVm-iC-1Dm" kind="show" identifier="goToEmergency" id="R9r-IR-5Jn"/>
+                        <segue destination="H8C-Vo-Lzq" kind="show" identifier="goToHospital" id="6Wl-qY-8gW"/>
+                        <segue destination="CLL-I0-Qjj" kind="show" identifier="goToContacts" id="SdF-E3-YAX"/>
+                        <segue destination="IkG-D4-PSZ" kind="show" identifier="goToSettings" id="Qas-7N-le3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-268" y="286"/>
+        </scene>
+        <!--Emergency View Controller-->
+        <scene sceneID="Lpf-DE-C6R">
+            <objects>
+                <viewController id="iVm-iC-1Dm" customClass="EmergencyViewController" customModule="findmyhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZX-Wh-zjo"/>
+                        <viewControllerLayoutGuide type="bottom" id="O1W-zD-Pep"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6BQ-y7-mnS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tt-SY-qNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="1028"/>
+        </scene>
+        <!--Contacts View Controller-->
+        <scene sceneID="nkK-wk-RbH">
+            <objects>
+                <viewController id="CLL-I0-Qjj" customClass="ContactsViewController" customModule="findmyhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KK3-tv-Ka7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kwb-B6-5tO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Llc-a5-Kvp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvF-uW-wwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="1028"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Fx1-Si-oLD">
+            <objects>
+                <viewController id="IkG-D4-PSZ" customClass="SettingsViewController" customModule="findmyhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CxR-fq-izN"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTK-q1-aw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TJd-jB-YpK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yS1-Vg-ve6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="1028"/>
+        </scene>
+        <!--Find Hospital View Controller-->
+        <scene sceneID="GTF-qm-FZn">
+            <objects>
+                <viewController id="H8C-Vo-Lzq" customClass="FindHospitalViewController" customModule="findmyhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1E-IF-ycA"/>
+                        <viewControllerLayoutGuide type="bottom" id="1xq-x1-bXc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nPK-wW-ows">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXr-4l-bin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="1028"/>
         </scene>
     </scenes>
 </document>
