@@ -49,6 +49,8 @@ class FindHospitalViewController: UIViewController {
         backButton.backgroundColor = UIColor(hex: 0x00cc00, alpha: 1)
         backButton.layer.cornerRadius = 5
         backButton.sizeToFit()
+        backButton.frame.size.width *= 1.1
+        backButton.frame.size.height *= 1.1
         backButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         backButton.center = CGPoint(x: bottomView.bounds.midX, y: bottomView.bounds.midY)
         bottomView.addSubview(backButton)

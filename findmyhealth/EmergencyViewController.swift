@@ -29,10 +29,13 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
     let locationManager = CLLocationManager()
     let screenSize = UIScreen.mainScreen().bounds
     var timer = NSTimer()
-    var count = 20
+    var count = 3
     var timeLabel = UILabel()
-    
+    var circleView = CircleView()
+    let innerCircle = UIControl()
+
     func setUpInterface() {
+        innerCircle.removeFromSuperview()
         let topView = UIView()
         topView.frame.size = CGSize(width: view.bounds.width, height: view.bounds.height * 0.15)
         topView.frame.origin = CGPointZero
@@ -56,6 +59,8 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
         backButton.backgroundColor = UIColor(hex: 0x00cc00, alpha: 1)
         backButton.layer.cornerRadius = 5
         backButton.sizeToFit()
+        backButton.frame.size.width *= 1.1
+        backButton.frame.size.height *= 1.1
         backButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         backButton.center = CGPoint(x: bottomView.bounds.midX, y: bottomView.bounds.midY)
         bottomView.addSubview(backButton)
@@ -64,35 +69,57 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
         let diceRoll = CGFloat(Int(arc4random_uniform(7))*50)
         var circleWidth = CGFloat(200)
         var circleHeight = circleWidth
-        var circleView = CircleView(frame: CGRectMake(diceRoll, 0, circleWidth, circleHeight))
+        circleView = CircleView(frame: CGRectMake(diceRoll, 0, circleWidth, circleHeight))
         circleView.center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
         view.addSubview(circleView)
-        circleView.animateCircle(20.0)
         
-        let innerCircle = UIView()
         innerCircle.backgroundColor = UIColor(hex: 0xa60000, alpha: 1)
         innerCircle.frame.size = CGSize(width: circleWidth - 35, height: circleHeight - 35)
         innerCircle.layer.cornerRadius = innerCircle.frame.size.height/2
         innerCircle.center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
+        innerCircle.addTarget(self, action: "startTimer", forControlEvents: UIControlEvents.TouchDown)
+        innerCircle.addTarget(self, action: "cancelTimer", forControlEvents: UIControlEvents.TouchUpInside)
+        innerCircle.addTarget(self, action: "cancelTimer", forControlEvents: UIControlEvents.TouchUpOutside)
+
         view.addSubview(innerCircle)
         
         timeLabel = UILabel()
-        timeLabel.text = String(count)
+        timeLabel.text = "Hold Down \n to Call \n 911"
         timeLabel.textColor = UIColor.whiteColor()
         timeLabel.textAlignment = .Center
         timeLabel.frame.size = innerCircle.frame.size
         timeLabel.frame.origin = CGPointZero
-        timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 40)
+        timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)
         timeLabel.numberOfLines = 0
         innerCircle.addSubview(timeLabel)
-        
+    }
+    
+    func cancelTimer() {
+        count = 3
+        timer.invalidate()
+        timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)
+        timeLabel.text = "Hold Down \n to Call \n 911"
+        circleView.removeFromSuperview()
+        let diceRoll = CGFloat(Int(arc4random_uniform(7))*50)
+        var circleWidth = CGFloat(200)
+        var circleHeight = circleWidth
+        circleView = CircleView(frame: CGRectMake(diceRoll, 0, circleWidth, circleHeight))
+        circleView.center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
+        view.addSubview(circleView)
+        view.bringSubviewToFront(innerCircle)
+    }
+    
+    func startTimer() {
+        timeLabel.text = String(count)
+        timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 40)
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
+        circleView.animateCircle(3.0)
     }
     
     func updateCounter() {
         timeLabel.text = String(count--)
         if(count <= 0) {
-            timer.invalidate()
+            cancelTimer()
             timeLabel.text = "Calling \n 911"
             timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)
             call911()
