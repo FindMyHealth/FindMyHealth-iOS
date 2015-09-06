@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7763A3ED4D4D3B492C3789BC /* Pods_findmyhealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8859033A3C8564602A5F3908 /* Pods_findmyhealth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CF04BE321B9B4771000ED175 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04BE311B9B4771000ED175 /* UIColorExtension.swift */; };
 		CFE21E521B9C026800CE3A34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE21E511B9C026800CE3A34 /* CircleView.swift */; };
 		CFE21E541B9C0A6900CE3A34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE21E531B9C0A6900CE3A34 /* CoreLocation.framework */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9DE385B284C6F6070192A6 /* Pods-findmyhealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findmyhealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-findmyhealth/Pods-findmyhealth.debug.xcconfig"; sourceTree = "<group>"; };
+		12AFCA0F5BECE05D027FA538 /* Pods-findmyhealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findmyhealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-findmyhealth/Pods-findmyhealth.release.xcconfig"; sourceTree = "<group>"; };
+		8859033A3C8564602A5F3908 /* Pods_findmyhealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findmyhealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF04BE311B9B4771000ED175 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CFE21E511B9C026800CE3A34 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		CFE21E531B9C0A6900CE3A34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -60,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE21E541B9C0A6900CE3A34 /* CoreLocation.framework in Frameworks */,
+				7763A3ED4D4D3B492C3789BC /* Pods_findmyhealth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FFED82AF1FDA4B4BFA14450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B9DE385B284C6F6070192A6 /* Pods-findmyhealth.debug.xcconfig */,
+				12AFCA0F5BECE05D027FA538 /* Pods-findmyhealth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF04BE301B9B4761000ED175 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +110,8 @@
 				CFE6481A1B9AC75200C6BC14 /* findmyhealth */,
 				CFE648301B9AC75300C6BC14 /* findmyhealthTests */,
 				CFE648191B9AC75200C6BC14 /* Products */,
+				1FFED82AF1FDA4B4BFA14450 /* Pods */,
+				E296CB2CCA9BE1C3B96AFE4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +177,14 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		E296CB2CCA9BE1C3B96AFE4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8859033A3C8564602A5F3908 /* Pods_findmyhealth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE648371B9AC75300C6BC14 /* Build configuration list for PBXNativeTarget "findmyhealth" */;
 			buildPhases = (
+				18D512954B7258D5B02881AF /* Check Pods Manifest.lock */,
 				CFE648141B9AC75200C6BC14 /* Sources */,
 				CFE648151B9AC75200C6BC14 /* Frameworks */,
 				CFE648161B9AC75200C6BC14 /* Resources */,
+				6611B1F62822BF5B7238A15C /* Embed Pods Frameworks */,
+				2873645F8B00481E8238E42F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +282,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D512954B7258D5B02881AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2873645F8B00481E8238E42F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-findmyhealth/Pods-findmyhealth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6611B1F62822BF5B7238A15C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-findmyhealth/Pods-findmyhealth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFE648141B9AC75200C6BC14 /* Sources */ = {
@@ -396,6 +471,7 @@
 		};
 		CFE648381B9AC75300C6BC14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9DE385B284C6F6070192A6 /* Pods-findmyhealth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = findmyhealth/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		CFE648391B9AC75300C6BC14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AFCA0F5BECE05D027FA538 /* Pods-findmyhealth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = findmyhealth/Info.plist;
