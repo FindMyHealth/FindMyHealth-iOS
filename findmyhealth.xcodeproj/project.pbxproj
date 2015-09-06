@@ -14,6 +14,7 @@
 		CFE648251B9AC75200C6BC14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE648241B9AC75200C6BC14 /* Images.xcassets */; };
 		CFE648281B9AC75200C6BC14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */; };
 		CFE648341B9AC75300C6BC14 /* findmyhealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */; };
+		CFEB1EAB1B9BEBD80000B8C9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1EAA1B9BEBD80000B8C9 /* API.swift */; };
 		CFFF0BD81B9AD64B00AC8129 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */; };
 		CFFF0BDA1B9AD66000AC8129 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */; };
 		CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */; };
@@ -42,6 +43,7 @@
 		CFE6482D1B9AC75300C6BC14 /* findmyhealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findmyhealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE648321B9AC75300C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE648331B9AC75300C6BC14 /* findmyhealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findmyhealthTests.swift; sourceTree = "<group>"; };
+		CFEB1EAA1B9BEBD80000B8C9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				CFE648241B9AC75200C6BC14 /* Images.xcassets */,
 				CFE648261B9AC75200C6BC14 /* LaunchScreen.xib */,
 				CFE6481B1B9AC75200C6BC14 /* Supporting Files */,
+				CFEB1EAA1B9BEBD80000B8C9 /* API.swift */,
 			);
 			path = findmyhealth;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				CFFF0BDE1B9AD68300AC8129 /* EmergencyViewController.swift in Sources */,
 				CFFF0BDA1B9AD66000AC8129 /* ContactsViewController.swift in Sources */,
 				CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */,
+				CFEB1EAB1B9BEBD80000B8C9 /* API.swift in Sources */,
 				CFFF0BD81B9AD64B00AC8129 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
