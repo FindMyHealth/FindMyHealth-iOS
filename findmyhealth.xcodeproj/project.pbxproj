@@ -22,6 +22,7 @@
 		CFFF0BDA1B9AD66000AC8129 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */; };
 		CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */; };
 		CFFF0BDE1B9AD68300AC8129 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF0BDD1B9AD68300AC8129 /* EmergencyViewController.swift */; };
+		E563FD3F1B9C6796009E1233 /* SortedHospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563FD3E1B9C6796009E1233 /* SortedHospitalsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
 		CFFF0BDD1B9AD68300AC8129 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		E563FD3E1B9C6796009E1233 /* SortedHospitalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedHospitalsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE6481F1B9AC75200C6BC14 /* DashboardViewController.swift */,
+				E563FD3E1B9C6796009E1233 /* SortedHospitalsViewController.swift */,
 				CFFF0BD71B9AD64B00AC8129 /* SettingsViewController.swift */,
 				CFFF0BD91B9AD66000AC8129 /* ContactsViewController.swift */,
 				CFFF0BDB1B9AD67400AC8129 /* FindHospitalViewController.swift */,
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE21E521B9C026800CE3A34 /* CircleView.swift in Sources */,
+				E563FD3F1B9C6796009E1233 /* SortedHospitalsViewController.swift in Sources */,
 				CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */,
 				CFE648201B9AC75200C6BC14 /* DashboardViewController.swift in Sources */,
 				CF04BE321B9B4771000ED175 /* UIColorExtension.swift in Sources */,

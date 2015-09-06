@@ -10,6 +10,8 @@
 	<string>findmyhealth</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>06DBCA85118BCAA068DDEB1EBE5E9C610C017234</key>
+		<string>https://github.com/FindMyHealth/FindMyHealth-backend.git</string>
 		<key>809464B4C08906E64C454025C2114E44FAE27C55</key>
 		<string>https://github.com/FindMyHealth/FindMyHealth-iOS.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>findmyhealth.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>06DBCA85118BCAA068DDEB1EBE5E9C610C017234</key>
+		<string>../../..</string>
 		<key>809464B4C08906E64C454025C2114E44FAE27C55</key>
 		<string>..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>809464B4C08906E64C454025C2114E44FAE27C55</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>06DBCA85118BCAA068DDEB1EBE5E9C610C017234</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

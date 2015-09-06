@@ -113,6 +113,9 @@ class FindHospitalViewController: UIViewController {
         default:
             break
         }
+        
+        self.performSegueWithIdentifier("goToSortedHospitals", sender: self)
+        
     }
     
     func touchDown(sender: UIControl) {

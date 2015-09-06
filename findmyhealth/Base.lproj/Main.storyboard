@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uoe-qk-h3z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uoe-qk-h3z">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -99,6 +99,24 @@
             </objects>
             <point key="canvasLocation" x="1808" y="1028"/>
         </scene>
+        <!--Sorted Hospitals View Controller-->
+        <scene sceneID="BEL-uL-pQy">
+            <objects>
+                <viewController id="wiA-eq-p0E" customClass="SortedHospitalsViewController" customModule="findmyhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unN-aC-UC9"/>
+                        <viewControllerLayoutGuide type="bottom" id="d10-24-dmF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tcr-r7-hBa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZ5-4z-xRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="1040"/>
+        </scene>
         <!--Find Hospital View Controller-->
         <scene sceneID="GTF-qm-FZn">
             <objects>
@@ -112,6 +130,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="wiA-eq-p0E" kind="show" identifier="goToSortedHospitals" id="qL0-0s-hiy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXr-4l-bin" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
