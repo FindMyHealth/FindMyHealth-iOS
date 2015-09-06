@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CF04BE321B9B4771000ED175 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04BE311B9B4771000ED175 /* UIColorExtension.swift */; };
+		CFE21E521B9C026800CE3A34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE21E511B9C026800CE3A34 /* CircleView.swift */; };
+		CFE21E541B9C0A6900CE3A34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE21E531B9C0A6900CE3A34 /* CoreLocation.framework */; };
 		CFE6481E1B9AC75200C6BC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */; };
 		CFE648201B9AC75200C6BC14 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6481F1B9AC75200C6BC14 /* DashboardViewController.swift */; };
 		CFE648231B9AC75200C6BC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE648211B9AC75200C6BC14 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		CF04BE311B9B4771000ED175 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CFE21E511B9C026800CE3A34 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CFE21E531B9C0A6900CE3A34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CFE648181B9AC75200C6BC14 /* findmyhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findmyhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE6481C1B9AC75200C6BC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE21E541B9C0A6900CE3A34 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +81,18 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		CFE21E501B9C025800CE3A34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CFE21E511B9C026800CE3A34 /* CircleView.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		CFE6480F1B9AC75200C6BC14 = {
 			isa = PBXGroup;
 			children = (
+				CFE21E531B9C0A6900CE3A34 /* CoreLocation.framework */,
 				CFE6481A1B9AC75200C6BC14 /* findmyhealth */,
 				CFE648301B9AC75300C6BC14 /* findmyhealthTests */,
 				CFE648191B9AC75200C6BC14 /* Products */,
@@ -97,6 +111,7 @@
 		CFE6481A1B9AC75200C6BC14 /* findmyhealth */ = {
 			isa = PBXGroup;
 			children = (
+				CFE21E501B9C025800CE3A34 /* Classes */,
 				CF04BE301B9B4761000ED175 /* Extensions */,
 				CFFF0BD61B9AC88200AC8129 /* ViewControllers */,
 				CFE6481D1B9AC75200C6BC14 /* AppDelegate.swift */,
@@ -246,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE21E521B9C026800CE3A34 /* CircleView.swift in Sources */,
 				CFFF0BDC1B9AD67400AC8129 /* FindHospitalViewController.swift in Sources */,
 				CFE648201B9AC75200C6BC14 /* DashboardViewController.swift in Sources */,
 				CF04BE321B9B4771000ED175 /* UIColorExtension.swift in Sources */,

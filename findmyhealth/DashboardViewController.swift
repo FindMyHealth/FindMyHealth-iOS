@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, CLLocationManagerDelegate {
     let screenSize = UIScreen.mainScreen().bounds.size
     let topBorder:CGFloat = 75
     let bottomBorder:CGFloat = 20
@@ -30,8 +31,15 @@ class DashboardViewController: UIViewController {
     }
     
     func setUpInterface() {
-        view.backgroundColor = UIColor.whiteColor()
+        var locationManager = CLLocationManager()
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
         
+        
+        
+        view.backgroundColor = UIColor.whiteColor()
         let topView = UIView()
         let bottomView = UIView()
         settings.removeFromSuperview()
