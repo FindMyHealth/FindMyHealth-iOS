@@ -11,10 +11,13 @@ import UIKit
 import MessageUI
 import CoreLocation
 
-class EmergencyViewController: UIViewController, MFMessageComposeViewControllerDelegate {
+class EmergencyViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
         setUpInterface()
     }
     
@@ -23,6 +26,7 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
         // Dispose of any resources that can be recreated.
     }
     
+    let locationManager = CLLocationManager()
     let screenSize = UIScreen.mainScreen().bounds
     
     func setUpInterface() {
@@ -80,25 +84,25 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
     }
     
     func back() {
-        sendText()
-//        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var userLocation:CLLocation = locations[0] as! CLLocation
         let long = userLocation.coordinate.longitude
         let lat = userLocation.coordinate.latitude
-        println("lat: \(lat), long: \(long)")
         //Do What ever you want with it
+        sendText(lat, long: long)
     }
     
-    func sendText() {
+    func sendText(lat: CLLocationDistance, long: CLLocationDistance) {
         if (MFMessageComposeViewController.canSendText()) {
             let controller = MFMessageComposeViewController()
-            controller.body = "Message Body"
+            controller.body = "The person with this number has indicated he is in an emergency situation using the Find My Health App. You have been listed as his primary contact. His location is approximately: {\(lat), \(long)}."
             controller.recipients = ["9738967552"]
             controller.messageComposeDelegate = self
             self.presentViewController(controller, animated: true, completion: nil)
+            locationManager.stopUpdatingLocation()
         }
     }
     
