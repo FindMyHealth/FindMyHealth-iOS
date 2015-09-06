@@ -28,6 +28,7 @@ class RESTAPI {
             if(error == nil) {
                 if let responseData : AnyObject? = data {
                     swiftyJSON = JSON(responseData!)
+                    
                     completion(swiftyJSON:swiftyJSON)
                 }
             }
@@ -35,6 +36,5 @@ class RESTAPI {
         }
     
     }
-    
     
 }
