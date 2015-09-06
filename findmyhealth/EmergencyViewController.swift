@@ -28,6 +28,9 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
     
     let locationManager = CLLocationManager()
     let screenSize = UIScreen.mainScreen().bounds
+    var timer = NSTimer()
+    var count = 20
+    var timeLabel = UILabel()
     
     func setUpInterface() {
         let topView = UIView()
@@ -58,21 +61,44 @@ class EmergencyViewController: UIViewController, MFMessageComposeViewControllerD
         bottomView.addSubview(backButton)
         backButton.addTarget(self, action: "back", forControlEvents: UIControlEvents.TouchUpInside)
         
-        addCircleView()
-        
-    }
-    
-    func addCircleView() {
         let diceRoll = CGFloat(Int(arc4random_uniform(7))*50)
         var circleWidth = CGFloat(200)
         var circleHeight = circleWidth
-        
-        // Create a new CircleView
         var circleView = CircleView(frame: CGRectMake(diceRoll, 0, circleWidth, circleHeight))
         circleView.center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
         view.addSubview(circleView)
-        circleView.animateCircle(5.0)
+        circleView.animateCircle(20.0)
+        
+        let innerCircle = UIView()
+        innerCircle.backgroundColor = UIColor(hex: 0xa60000, alpha: 1)
+        innerCircle.frame.size = CGSize(width: circleWidth - 35, height: circleHeight - 35)
+        innerCircle.layer.cornerRadius = innerCircle.frame.size.height/2
+        innerCircle.center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
+        view.addSubview(innerCircle)
+        
+        timeLabel = UILabel()
+        timeLabel.text = String(count)
+        timeLabel.textColor = UIColor.whiteColor()
+        timeLabel.textAlignment = .Center
+        timeLabel.frame.size = innerCircle.frame.size
+        timeLabel.frame.origin = CGPointZero
+        timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 40)
+        timeLabel.numberOfLines = 0
+        innerCircle.addSubview(timeLabel)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
     }
+    
+    func updateCounter() {
+        timeLabel.text = String(count--)
+        if(count <= 0) {
+            timer.invalidate()
+            timeLabel.text = "Calling \n 911"
+            timeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)
+            call911()
+        }
+    }
+
     func addTimer() {
         let timerLabel = UILabel()
         
